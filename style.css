@@ -1,0 +1,78 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: #4e54c8;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: #4e54c8;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.contact-cta .btn {
+  background: white;
+  color: #4e54c8;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero, .services, .contact-cta {
+    padding: 40px 15px;
+  }
+  .card img {
+    width: 50px;
+  }
+}
